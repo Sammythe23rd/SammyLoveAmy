@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Love Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="game.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="bg-light text-center">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">💖 My Love 💖</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="game.html">Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rsvp.html">RSVP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Question Generator Section -->
+    <section class="container mt-5">
+      <div class="card shadow-lg p-4 bg-danger text-white border-0 rounded">
+        <h2>Question Generator ❤️</h2>
+        <button
+          class="btn btn-light text-danger mt-3"
+          onclick="generateQuestion()"
+        >
+          Press am
+        </button>
+        <p id="question" class="fs-4 mt-3"></p>
+      </div>
+    </section>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Tenor GIF -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="w-100">
+            <div
+              class="tenor-gif-embed"
+              data-postid="14797655785087855427"
+              data-share-method="host"
+              data-aspect-ratio="1"
+              data-width="150pt"
+            ></div>
+          </div>
+        </div>
+
+        <!-- YouTube Video -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/XEQYQQiEsVU?si=yFJt5FHczx0v007E"
+              title="YouTube video player"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script async src="https://tenor.com/embed.js"></script>
+
+    <div class="hello-kitty-container">
+      <img
+        src="images/Hello Kitty.png"
+        alt="Hello Kitty"
+        class="hello-kitty-animation"
+      />
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-danger text-white py-3 mt-5">
+      <p>SAMMY ❤️ AMY</p>
+    </footer>
+
+    <script>
+      function generateQuestion() {
+        console.log("Button clicked!"); // Debugging check
+
+        const questionElement = document.getElementById("question");
+        if (!questionElement) {
+          console.error("Element with ID 'question' not found!");
+          return;
+        }
+
+        const questions = [
+          "What was your favorite date we’ve ever had?",
+          "If you could describe our love in one word, what would it be?",
+          "What is something small I do that makes you happy?",
+          "What song reminds you of me?",
+          "What’s your dream vacation for us?",
+          "What’s one thing you’re afraid to tell anyone else?",
+          "What are three things about me that attracted you to me when we first met?",
+          "When did you know you loved me?",
+          "What does the perfect day look like for you?",
+          "What is something you’ve always wanted to ask me but haven’t?",
+          "What have I done that has made you proud? When was it?",
+          "What is your biggest regret?",
+          "If you could relive one day of our relationship what day would it be?",
+          "What do you like about our relationship? How could we improve?",
+          "Which of the five senses are most sensual to you?",
+          "What do you need most in a friend right now?",
+          "What do you believe is missing from your life?",
+          "How have you evolved in the last 5 years?",
+          "What are your goals for our relationship?",
+          "What are some of your dreams for your life?",
+          "How would you like to change in the next year?",
+          "What legacy do you want to leave behind?",
+          "Where in your life do you feel most unfulfilled?",
+          "What would you change about your financial situation and why?",
+          "Where would you like us to travel to and why?",
+          "What is an adventure you want to have before you die?",
+          "How has your perspective on the world changed in the last two years?",
+          "If you could have dinner with one person living or dead, who would it be and why?",
+          "If you could have someone else’s life, who would it be?",
+          "What historical event would you want to be present for and why?",
+          "If we lived for 100 years, what would you want our lives to look like?",
+          "What career would you choose if you had unlimited money?",
+          "What were some of the highlights of your childhood?",
+          "What is your favorite memory of us?",
+          "What has been your happiest moment this year so far?",
+          "Which relative are you closest to and why?",
+          "Who is the most difficult person in your life to get along with and why?",
+          "What influenced your decision to have kids or not have kids?",
+          "Who is your childhood hero and why?",
+          "If you could change us into an animal pair, which one would you choose?",
+          "If you could choose any country for us to live in, which one would you choose?",
+          "What do you think is the best part about our relationship?",
+          "If you could change one of your characteristics, which one would it be?",
+          "What would you change about the way we met?",
+          "What is the biggest adversity you’ve had in the last 5 years and how did you overcome it?",
+          "What is your philosophy for living a happy life?",
+          "How do your daily habits change when you’re feeling stressed?",
+          "What are you doing currently that your future self would thank you for?",
+          "What would be the theme song of our relationship?",
+          "What have you learned about relationships from your parents?",
+          "What are your top 3 values?",
+          "What is your timeline for our relationship (marriage, children, career, retirement, etc)",
+          "How am I similar to your parent(s)?",
+          "How do you need support from me when you’re sad or frustrated?",
+          "You like my PELNIZZ",
+        ];
+
+        const randomIndex = Math.floor(Math.random() * questions.length);
+        questionElement.innerText = questions[randomIndex];
+
+        console.log("New question:", questionElement.innerText);
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

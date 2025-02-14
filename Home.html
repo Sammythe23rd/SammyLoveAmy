@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Valentine's Day</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-light text-center">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">💖 My Love 💖</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rsvp.html">RSVP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home" class="container mt-5 text-center">
+      <h1 class="text-danger">Happy Valentine's Day MAMA!!!!!!!!!!!! ❤️</h1>
+      <div class="card shadow-lg p-4 bg-white">
+        <p id="text1">To my Sunshine,</p>
+        <p></p>
+        <p></p>
+        <p id="text2">
+          This is a letter from my heart to you. This month marks our one-year
+          anniversary, and it also happens to be the month of love. I met you on
+          February 6th, 2023, and since then, our relationship has faced
+          different obstacles, emotionally and otherwise. The beautiful part of
+          it all is that we stood strong through the trials we faced, and today,
+          we get to celebrate our love together after an entire year. I wouldn’t
+          want to go through this journey with anyone but you. You are the most
+          amazing, warm-hearted, caring, and understanding person in the world,
+          and I am beyond happy that you chose me to be your man. I know I told
+          you that I don’t have money this Valentine’s Day, God knows I wish I
+          did. But instead, I decided to build us a love website, just for us,
+          to remember our first-ever Valentine’s together because that is all I
+          have to give right now(IT knowlege). I know the money is coming soon;
+          just be patient with me. One day, I will buy you a car for one of our
+          Valentine’s Day together. I promise. All I ask is that you stick with
+          me and believe in me. I will make you proud. I will make every moment
+          with me worth your while. Please join me on this journey of life,
+          because our forever is certain. I love you so much, my princess. ❤️
+        </p>
+        <p id="text3">From Pookie</p>
+      </div>
+
+      <!-- Valentine’s Song Section -->
+      <h3 class="text-danger mt-4">Mystery Song</h3>
+      <audio id="valentine-song" controls>
+        <source
+          src="music/ycee-juice-official-video-ft-maleek-berry-128-ytshorts.savetube.me.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+
+      <br />
+      <button
+        class="btn btn-success mt-3"
+        onclick="document.getElementById('valentine-song').play()"
+      >
+        Guess before you tap me
+      </button>
+      <button
+        class="btn btn-warning mt-3"
+        onclick="document.getElementById('valentine-song').pause()"
+      >
+        Pause
+      </button>
+    </section>
+
+    <footer class="bg-danger text-white py-3 mt-5">
+      <p>SAMMY ❤️ AMY</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

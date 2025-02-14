@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RSVP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-light text-center">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">💖 My Love 💖</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="rsvp.html">RSVP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container mt-5">
+      <div class="row">
+        <!-- RSVP Form -->
+        <div class="col-md-6">
+          <h2 class="text-danger">RSVP for Next Valentine's Day</h2>
+          <h4 class="text-danger">(Book our next event here)</h4>
+          <form
+            action="rsvp.php"
+            method="post"
+            class="p-4 bg-white shadow-lg rounded"
+          >
+            <input
+              type="text"
+              name="name"
+              class="form-control mb-3"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-control mb-3"
+              placeholder="Your Email"
+              required
+            />
+            <input
+              type="tel"
+              name="phoneNumber"
+              class="form-control mb-3"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="text"
+              name="adress"
+              class="form-control mb-3"
+              placeholder="Address"
+              required
+            />
+            <input
+              type="text"
+              name="postalCode"
+              class="form-control mb-3"
+              placeholder="Postal Code"
+              required
+            />
+            <input type="date" name="date" class="form-control mb-3" required />
+            <button type="submit" class="btn btn-danger w-100">
+              Send RSVP
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="col-md-6">
+          <h3 class="text-danger">Event Location</h3>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5616.187232254792!2d-66.0852392248402!3d45.26611834663486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca7b499cd6a074d%3A0xfe14b3ad4a86c949!2s324%20Douglas%20Ave%2C%20Saint%20John%2C%20NB%20E2K%201E7!5e0!3m2!1sen!2sca!4v1739430157776!5m2!1sen!2sca"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+/* Grand Entrance Animation */
+.animate-heading {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInScale 2s ease-in-out forwards;
+}
+
+.animate-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 2s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* Background Pulsating Glow */
+body {
+    animation: pulseBackground 5s infinite alternate ease-in-out;
+}
+
+/* Falling Hearts Animation */
+.heart {
+    position: fixed;
+    top: 0;
+    font-size: 2rem;
+    opacity: 0.8;
+    animation: fall 5s linear forwards;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseBackground {
+    0% {
+        background-color: #ffe6e6;
+    }
+    100% {
+        background-color: #ffc2c2;
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+.countdown-body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+}

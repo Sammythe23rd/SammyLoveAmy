@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery Selection</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css"
+    />
+
+    <style>
+      .gallery {
+        column-count: 3;
+        column-gap: 10px;
+      }
+      .gallery img {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .gallery {
+          column-count: 2;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery {
+          column-count: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-light text-center">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">💖 My Love 💖</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rsvp.html">RSVP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery -->
+    <div class="container mt-5">
+      <h2 class="text-center">Amy's Creativity ❤️</h2>
+      <div class="gallery">
+        <a href="images/Drawing 1.jpg" class="glightbox">
+          <img src="images/Drawing 1.jpg" alt="Drawing 1" />
+        </a>
+        <a href="images/Drawing 2.jpg" class="glightbox">
+          <img src="images/Drawing 2.jpg" alt="Drawing 2" />
+        </a>
+        <a href="images/Drawing 4.jpg" class="glightbox">
+          <img src="images/Drawing 4.jpg" alt="Drawing 4" />
+        </a>
+        <a href="images/Drawing 5.jpg" class="glightbox">
+          <img src="images/Drawing 5.jpg" alt="Drawing 5" />
+        </a>
+        <a href="images/Drawing 6.jpg" class="glightbox">
+          <img src="images/Drawing 6.jpg" alt="Drawing 6" />
+        </a>
+        <a href="images/Drawing 3.jpg" class="glightbox">
+          <img src="images/Drawing 3.jpg" alt="Drawing 3" />
+        </a>
+        <a href="images/4.jpg" class="glightbox">
+          <img src="images/4.jpg" alt="Image 4" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-danger text-white py-3 mt-5">
+      <p>SAMMY ❤️ AMY</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({ selector: ".glightbox" });
+    </script>
+  </body>
+</html>
