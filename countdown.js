@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (difference <= 0) {
             // Redirect to the main Valentine's page when the countdown ends
-            window.location.href = "index.html";
+            window.location.href = "Home.html";
             return;
         }
 
